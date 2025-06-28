@@ -1,7 +1,7 @@
 {
   "name": "edison-platform",
   "version": "1.0.0",
-  "description": "منصة  ماكس Express آمن وخفيف",
+  "description": "منصة صدقة تعليمية Express آمن وخفيف",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
