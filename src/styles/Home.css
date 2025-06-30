@@ -1,0 +1,98 @@
+
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=HK+Grotesk:wght@400;700&display=swap");
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "HK Grotesk", sans-serif;
+  background-color: #2800ff;
+  color: #373fff;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 450px;
+}
+
+.title {
+  color: #2800ff;
+  font-family: "HK Grotesk", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 105%;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.illustration {
+  max-width: 100%;
+  max-height: 92vh;
+  filter: hue-rotate(10deg);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.illustration:hover {
+  transform: scale(1.1);
+}
+
+.instructions {
+  margin: 1rem auto 0;
+  background: white;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.instructions h2 {
+  color: #2800ff;
+}
+
+button {
+  font-family: inherit;
+  font-size: 100%;
+  background: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  padding: 0.75rem 1rem;
+  margin: 0.75rem 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #f0f0f0;
+}
+
+.dipped {
+  background: #2800ff !important;
+  color: white !important;
+  transform: rotate(10deg);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .title {
+    font-size: 60px;
+  }
+  
+  .content {
+    max-width: 350px;
+  }
+}
