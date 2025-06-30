@@ -1,6 +1,5 @@
 
 import { useState } from 'react';
-import '../styles/Home.css';
 
 const Home = () => {
   const [clicked, setClicked] = useState(false);
